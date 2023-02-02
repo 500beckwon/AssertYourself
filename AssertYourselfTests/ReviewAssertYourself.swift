@@ -1,14 +1,15 @@
 //
-//  AssertYourselfTests.swift
+//  ReviewAssertYourself.swift
 //  AssertYourselfTests
 //
-//  Created by ByungHoon Ann on 2023/02/01.
+//  Created by ByungHoon Ann on 2023/02/02.
 //
 
 import XCTest
-@testable import AssertYourself
 
-final class AssertYourselfTests: XCTestCase {
+/// 1장 Assert Yourself 복습 파일
+
+final class ReviewAssertYourself: XCTestCase {
 
     override func setUpWithError() throws {
     }
@@ -28,25 +29,25 @@ final class AssertYourselfTests: XCTestCase {
     }
     
     func test_fail() {
-        XCTFail("문제 발생")
+        XCTFail("문제 발생했다")
     }
     
     func test_fail_withInterpolatedMessage() {
-        let theAnswer = 42
-        XCTFail("The Answer to the Great Question is \(theAnswer)")
+        let statsCode = 503
+        XCTFail("통신 에러 Status Code = \(statsCode)")
     }
     
     // 추가 코드는 잘못될 수 있는 코드
     /// Avoid Conditionals in Tests
     func test_avoidConditionalCode() {
-        let success = false
+        let success = true
         if !success {
             XCTFail()
         }
     }
     
     func test_assertTrue() {
-        let success = true
+        let success = false
         XCTAssertTrue(success)
     }
     
@@ -54,8 +55,7 @@ final class AssertYourselfTests: XCTestCase {
         let success = false
         XCTAssertFalse(success)
     }
-    // -- 10p
-    
+
     func test_assertNil() {
         let optionalValue: Int? = 123
         XCTAssertNil(optionalValue)
@@ -85,25 +85,26 @@ final class AssertYourselfTests: XCTestCase {
     
     /// Test Equality with Optionals
     func test_assertEqual_withOptional() {
-        let result: String? = "foo"
-        XCTAssertEqual(result, "bar")
+        let result: Float? = 0.01
+        XCTAssertEqual(result, 0.01)
     }
     
     /// Fudge Equality with Doubles and Floats
     func test_floatingPointDanger() {
-        let result = 0.1 + 0.2
+        let result = 0.00000004 + 0.000000042
         // accuracy 정확도
-        XCTAssertEqual(result, 0.3, accuracy: 0.0000000000000001)
-        // 0.00000000000000001 == Failure! 0.0000000000000001 == Success!
+        XCTAssertEqual(result, 0.000000082, accuracy: 0.000000001)
         // test_floatingPointDanger(): XCTAssertEqual failed: ("0.30000000000000004") is not equal to ("0.3")
         // XCTAssertEqual(result, 0.3)
     }
     
     /// Avoid Redundant Messages
     func test_messageOverKill() {
-        let actual = "actual"
-        XCTAssertEqual(actual,
+        let expected = "expected"
+        XCTAssertEqual(expected,
                        "expected",
-                       "Expected \"expected\" but got \"\(actual)\"")
+                       "Expected \"expected\" but got \"\(expected)\"")
     }
 }
+
+
