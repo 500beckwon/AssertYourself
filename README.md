@@ -20,6 +20,10 @@
 - if 문의 테스트는 참과 거짓 모두의 테스트가 필요하다
 - EditScema -> Test -> Options -> Code Coverage [] Gather coverage for [all target] 부분을 체크한 후 커버리지 비율을 확인 할 수 있다 파란불은 활성화 빨간불은 비활성화   
 
-## Take Control of Application Launch 4장 진도 완료
+## Take Control of Application Launch 4장 진도 완료(2023.02.05)
 - 테스를 작성할 때 불필요하게 앱이 실행하는 과정에서 network 통신이 발생하개 되는데 이를 방지하기 위해서 커스텀 Launch를 만드는 내용
 - Coverage를 측정해보니 앱 생성시 존재하는 AppDelegate가 0%로 미사용 됨
+
+## Load View Controllers 5장 진도 완료(2023.02.05)
+- ViewController Test시 xib, code, storyboard 모두 테스트 가능하다
+- 그냥 초기화만 하면 테스트가 어렵고 3가지 전부  [ UIViewController ].loadViewIfNeeded() 를 호출 하면 view가 그려져 테스트가 가능해진다
