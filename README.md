@@ -27,3 +27,8 @@
 ## Load View Controllers 5장 진도 완료(2023.02.05)
 - ViewController Test시 xib, code, storyboard 모두 테스트 가능하다
 - 그냥 초기화만 하면 테스트가 어렵고 3가지 전부  [ UIViewController ].loadViewIfNeeded() 를 호출 하면 view가 그려져 테스트가 가능해진다
+
+## Manage Difficult Dependencies 4장 진도 완료(2023.02.13)
+- FIRE 규칙을 사용하여 종속성이 빠르고 격리되고 반복 가능한지 테스트하기 쉬운지 여부
+- 생성자를 통한 DI 주입, 프로퍼티를 통한 DI 주입 등을 활용할 것
+- 싱긑턴 백도어? 모르는 단어는 따로 공부할 것
