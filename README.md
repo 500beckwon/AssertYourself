@@ -1,6 +1,7 @@
 
 #  IOS Unit Testing by Example 도서 학습
 
+# Part 1
 
 ## AssertYourself 1장 진도 완료(2023.02.02)
 - 조건문은 가급적 피할 것
@@ -28,7 +29,15 @@
 - ViewController Test시 xib, code, storyboard 모두 테스트 가능하다
 - 그냥 초기화만 하면 테스트가 어렵고 3가지 전부  [ UIViewController ].loadViewIfNeeded() 를 호출 하면 view가 그려져 테스트가 가능해진다
 
-## Manage Difficult Dependencies 4장 진도 완료(2023.02.13)
+## Manage Difficult Dependencies 6장 진도 완료(2023.02.13)
 - FIRE 규칙을 사용하여 종속성이 빠르고 격리되고 반복 가능한지 테스트하기 쉬운지 여부
 - 생성자를 통한 DI 주입, 프로퍼티를 통한 DI 주입 등을 활용할 것
 - 싱긑턴 백도어? 모르는 단어는 따로 공부할 것
+
+
+# Part 2
+
+## Testing Outlet Connections 7장 진도 완료 (2023.02.16) 완료
+- UI의 outlet 연결 확인 시 private(set)인 경우 notnil 검사에서 false가 나온다
+- private(set)을 제거하니 true로 바뀜
+ 
