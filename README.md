@@ -41,3 +41,5 @@
 - UI의 outlet 연결 확인 시 private(set)인 경우 notnil 검사에서 false가 나온다
 - private(set)을 제거하니 true로 바뀜
  
+## Testing Button Taps(Using Actions)
+- tap 함수를 따로 만들어서 UIAction을 테스트 하는게 훨씬 더 빠르다
