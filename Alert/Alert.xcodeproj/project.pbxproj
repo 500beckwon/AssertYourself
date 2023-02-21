@@ -28,13 +28,6 @@
 			remoteGlobalIDString = 689E25D029A395C30050D43B;
 			remoteInfo = Alert;
 		};
-		689E25F229A395C40050D43B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 689E25C929A395C30050D43B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 689E25D029A395C30050D43B;
-			remoteInfo = Alert;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,7 +54,6 @@
 		689E25E229A395C40050D43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689E25E729A395C40050D43B /* AlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		689E25EB29A395C40050D43B /* AlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTests.swift; sourceTree = "<group>"; };
-		689E25F129A395C40050D43B /* AlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		689E261929A398490050D43B /* ViewControllerPresentationSpy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ViewControllerPresentationSpy.framework; sourceTree = "<group>"; };
 		689E261D29A398A90050D43B /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		689E261F29A398D70050D43B /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
@@ -83,13 +75,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		689E25EE29A395C40050D43B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,7 +92,6 @@
 			children = (
 				689E25D129A395C30050D43B /* Alert.app */,
 				689E25E729A395C40050D43B /* AlertTests.xctest */,
-				689E25F129A395C40050D43B /* AlertUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,24 +160,6 @@
 			productReference = 689E25E729A395C40050D43B /* AlertTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		689E25F029A395C40050D43B /* AlertUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 689E260129A395C40050D43B /* Build configuration list for PBXNativeTarget "AlertUITests" */;
-			buildPhases = (
-				689E25ED29A395C40050D43B /* Sources */,
-				689E25EE29A395C40050D43B /* Frameworks */,
-				689E25EF29A395C40050D43B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				689E25F329A395C40050D43B /* PBXTargetDependency */,
-			);
-			name = AlertUITests;
-			productName = AlertUITests;
-			productReference = 689E25F129A395C40050D43B /* AlertUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,10 +174,6 @@
 						CreatedOnToolsVersion = 14.0.1;
 					};
 					689E25E629A395C40050D43B = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 689E25D029A395C30050D43B;
-					};
-					689E25F029A395C40050D43B = {
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = 689E25D029A395C30050D43B;
 					};
@@ -232,7 +194,6 @@
 			targets = (
 				689E25D029A395C30050D43B /* Alert */,
 				689E25E629A395C40050D43B /* AlertTests */,
-				689E25F029A395C40050D43B /* AlertUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,13 +210,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		689E25E529A395C40050D43B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		689E25EF29A395C40050D43B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,13 +239,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		689E25ED29A395C40050D43B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,11 +246,6 @@
 			isa = PBXTargetDependency;
 			target = 689E25D029A395C30050D43B /* Alert */;
 			targetProxy = 689E25E829A395C40050D43B /* PBXContainerItemProxy */;
-		};
-		689E25F329A395C40050D43B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 689E25D029A395C30050D43B /* Alert */;
-			targetProxy = 689E25F229A395C40050D43B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -545,42 +487,6 @@
 			};
 			name = Release;
 		};
-		689E260229A395C40050D43B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X2WF6FR3RY;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ann.beckwon.AlertUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Alert;
-			};
-			name = Debug;
-		};
-		689E260329A395C40050D43B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X2WF6FR3RY;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ann.beckwon.AlertUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Alert;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -607,15 +513,6 @@
 			buildConfigurations = (
 				689E25FF29A395C40050D43B /* Debug */,
 				689E260029A395C40050D43B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		689E260129A395C40050D43B /* Build configuration list for PBXNativeTarget "AlertUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				689E260229A395C40050D43B /* Debug */,
-				689E260329A395C40050D43B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
