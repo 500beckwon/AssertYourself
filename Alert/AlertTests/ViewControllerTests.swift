@@ -29,8 +29,8 @@ class ViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
-    func test_tappingButton_shouldShowAlert() {
-        sut.button.sendActions(for: .touchUpInside)
+    func test_tappingButton_shouldShowAlert() throws {
+        
         alertVerifier.verify(
             title: "Title",
             message: "Message",
@@ -39,11 +39,11 @@ class ViewControllerTests: XCTestCase {
                 .cancel("Cancel"),
                 .default("No Handler"),
                 .default("Default"),
-                .destructive("Destroy"),
+                .destructive("Destroy")
             ], presentingViewController: sut
         )
-        
         XCTAssertEqual(alertVerifier.preferredAction?.title, "OK", "preferred action")
+        
     }
     
     func test_executeAlertAction_withOKButton() throws {

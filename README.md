@@ -43,3 +43,7 @@
  
 ## Testing Button Taps(Using Actions)
 - tap 함수를 따로 만들어서 UIAction을 테스트 하는게 훨씬 더 빠르다
+
+## Testing Alerts 
+- 갑자기 프레임워크 출현해서 Test에 Phase
+- 어렵다, 무슨 말인지 모르겠지만 그냥 했다
