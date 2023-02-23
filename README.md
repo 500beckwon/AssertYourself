@@ -1,6 +1,12 @@
 
 #  IOS Unit Testing by Example 도서 학습
 
+## 계획
+1. 일단 진도만 나가기 모르면 대충 해보고 담장으로 ㄱㄱ
+2. 진도 다 하면 다시 첨부터 해보고 다시 보기
+3. 장 마지막마다 적혀있던 Activities를 수행해보기
+4. 실제 내가 커스텀으로 제작해보기
+
 # Part 1
 
 ## AssertYourself 1장 진도 완료(2023.02.02)
@@ -40,9 +46,27 @@
 ## Testing Outlet Connections 7장 진도 완료 (2023.02.16) 완료
 - UI의 outlet 연결 확인 시 private(set)인 경우 notnil 검사에서 false가 나온다
  
-## Testing Button Taps(Using Actions)
+## Testing Button Taps(Using Actions) 8장 진도 완료
 - tap 함수를 따로 만들어서 UIAction을 테스트 하는게 훨씬 더 빠르다
 
-## Testing Alerts 
+## Testing Alerts 9장 진도완료
 - 갑자기 프레임워크 출현해서 Test에 Phase
 - 어렵다, 무슨 말인지 모르겠지만 그냥 했다
+
+## Testing Navigation Between Screens 10장 진도 완료
+- 화면 이동 테스트인데 너무 졸려서 진도만 쓱쓱 나갔다 ㅠㅠ
+
+## Testing UserDefaults (with Fakes) 11장 진도 완료
+- UserDefaults에 UserDefaultsProtocol라는 protocol을 만들어서 적용시키면 변수를 초기화 할 때 어노테이션, 타입 부분에 UserDefaultsProtocol을 선언하면 놀랍게도 컴파일 에러가 뜨지 않는다!
+- 일종의 훼이크(Fake), Mock 개념이 여기서부터 본격적으로 나온다 
+
+## Testing Network Request (with Mocks) 12장 진도완료
+- UserDefaults와 마찬가지로 Dummy, Fake를 만들어서 예상, 결과를 확인하는 것인가보다
+
+## Testing Network Responses (and Closures) 13장 진도완료
+- 엄청 어렵고, 양이 많았다
+- 비동기테스트는 일반적으로쓰이는 async, DispatchQueue는 test시 무조건 false가 반환하기 떄문에 XCTest에서 지원해주는  expectation(description: String)을 사용해서 테스트 한다 또한 completionHandler 클로져안에서 초기화한 expectation.fulfill() 을 작성해주면 비동기 값을 반환받을 수 있다
+- 비동기 테스트에는 반환 대기 시간을 정할 수 있는데 책에서는 0.01초로 기준을 두라고 써있었다
+- 반대로 비동기가 아닌 상태 또한 테스트가 가능하다 버튼을 눌러 네트워크 요정이 완료되기전에 button enable상태를 확인한다던가 등등
+- 이 부분이 가장 핵심 과제인 것 같았따
+
