@@ -70,3 +70,5 @@
 - 반대로 비동기가 아닌 상태 또한 테스트가 가능하다 버튼을 눌러 네트워크 요정이 완료되기전에 button enable상태를 확인한다던가 등등
 - 이 부분이 가장 핵심 과제인 것 같았따
 
+## Testing Text Fields (and Delegate Methods) 14장 진도 완료
+
