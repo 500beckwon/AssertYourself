@@ -71,4 +71,7 @@
 - 이 부분이 가장 핵심 과제인 것 같았따
 
 ## Testing Text Fields (and Delegate Methods) 14장 진도 완료
-
+- 그나마 쉬웠다
+- delegate함수를 테스트할려면 아예 통쨰로 만들어서 값을 넘겨서 호출하면 된다
+- UI atributes상태 또한 체크가능
+- isResponder까지 가능
