@@ -75,3 +75,7 @@
 - delegate함수를 테스트할려면 아예 통쨰로 만들어서 값을 넘겨서 호출하면 된다
 - UI atributes상태 또한 체크가능
 - isResponder까지 가능
+
+## Testing Table Views 15장 진도 완료
+- TestHelper 파일에 delegate 함수를 제작하여 임의로 값을 넣어 실행하면 실제 실행한 것과 같은 이벤트를 발생시킬 수 있고 이를 통하여 테스트를 진행할 수 있다
+- 특정 indexPath.row 까지 가능할 줄은....신기방기
