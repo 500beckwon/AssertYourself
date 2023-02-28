@@ -79,3 +79,6 @@
 ## Testing Table Views 15장 진도 완료
 - TestHelper 파일에 delegate 함수를 제작하여 임의로 값을 넣어 실행하면 실제 실행한 것과 같은 이벤트를 발생시킬 수 있고 이를 통하여 테스트를 진행할 수 있다
 - 특정 indexPath.row 까지 가능할 줄은....신기방기
+
+## Testing View Appearance (with Snapshots)
+- snapshot 테스트를 하는건데 이해가 어렵다 프레임워크 연결까지만 성공...
