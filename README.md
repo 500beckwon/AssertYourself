@@ -80,5 +80,13 @@
 - TestHelper 파일에 delegate 함수를 제작하여 임의로 값을 넣어 실행하면 실제 실행한 것과 같은 이벤트를 발생시킬 수 있고 이를 통하여 테스트를 진행할 수 있다
 - 특정 indexPath.row 까지 가능할 줄은....신기방기
 
-## Testing View Appearance (with Snapshots)
+## Testing View Appearance 16장 진도 완료 (with Snapshots)
 - snapshot 테스트를 하는건데 이해가 어렵다 프레임워크 연결까지만 성공...
+
+# Part 3
+
+## Unleash the Power of Refactoring 17장 진도 완료
+
+- 리팩토링(Refactoring)?
+    - 프로그램(시스템)의 동작을 변경하지 않고 코드가 작동하는 방식을 변경하는 것
+

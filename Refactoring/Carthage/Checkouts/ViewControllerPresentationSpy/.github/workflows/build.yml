@@ -1,0 +1,81 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+concurrency:
+  # Cancel any in-progress workflows for this workflow/branch combination.
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build without tests
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        run-config:
+          - { project: 'Source/ViewControllerPresentationSpy.xcodeproj', scheme: 'ViewControllerPresentationSpy-tvOS', sdk: 'appletvsimulator', destination: 'platform=tvOS Simulator,OS=latest,name=Apple TV' }
+          - { project: 'ObjCSample/ObjCSampleViewControllerPresentationSpy.xcodeproj', scheme: 'ObjCSampleViewControllerPresentationSpy', sdk: 'iphonesimulator', destination: 'platform=iOS Simulator,OS=latest,name=iPhone 8' }
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v3
+      - name: Show current version of Xcode
+        run: xcodebuild -version
+      - name: Build
+        run: xcodebuild build -project '${{ matrix.run-config['project'] }}' -scheme '${{ matrix.run-config['scheme'] }}' -sdk '${{ matrix.run-config['sdk'] }}' -destination '${{ matrix.run-config['destination'] }}' | xcpretty && exit ${PIPESTATUS[0]}
+
+  test:
+    name: Build & test
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        run-config:
+          - { project: 'SwiftSample/SwiftSampleViewControllerPresentationSpy.xcodeproj', scheme: 'SwiftSampleViewControllerPresentationSpy', sdk: 'iphonesimulator', destination: 'platform=iOS Simulator,OS=latest,name=iPad Air (4th generation)' }
+          - { project: 'SwiftSamplePackage/SwiftSampleViewControllerPresentationSpy.xcodeproj', scheme: 'SwiftSampleViewControllerPresentationSpy', sdk: 'iphonesimulator', destination: 'platform=iOS Simulator,OS=latest,name=iPad Air (4th generation)' }
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v3
+      - name: Show current version of Xcode
+        run: xcodebuild -version
+      - name: Build & test
+        run: xcodebuild build -project '${{ matrix.run-config['project'] }}' -scheme '${{ matrix.run-config['scheme'] }}' -sdk '${{ matrix.run-config['sdk'] }}' -destination '${{ matrix.run-config['destination'] }}' | xcpretty && exit ${PIPESTATUS[0]}
+
+  buildCarthage:
+    needs: [ build, test ]
+    name: Build Carthage
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: carthage build --configuration Release --no-skip-current --use-xcframeworks
+
+  podspec:
+    needs: [ build, test ]
+    name: Pod Spec Lint
+    runs-on: macos-latest
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v3
+      - name: Lint the pod spec
+        run: pod spec lint --quick
+
+  auto-merge:
+    needs: [ buildCarthage, podspec ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+      - name: auto-merge
+        if: |
+          github.actor == 'dependabot[bot]' &&
+          github.event_name == 'pull_request'
+        run: |
+          ./merge_dependabot.sh
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          # this secret needs to be in the settings.secrets.dependabot
+          GITHUB_TOKEN: ${{secrets.GH_ACTION_TOKEN}}
