@@ -1,0 +1,2 @@
+github "uber/ios-snapshot-test-case" ~> 8.0.0
+github "jonreid/ViewControllerPresentationSpy" ~> 7.0

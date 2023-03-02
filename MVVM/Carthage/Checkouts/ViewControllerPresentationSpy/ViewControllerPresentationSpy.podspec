@@ -1,0 +1,35 @@
+Pod::Spec.new do |s|
+  s.name     = 'ViewControllerPresentationSpy'
+  s.version  = '7.0.0'
+  s.summary  = 'Unit test presented view controllers, alerts, and action sheets for iOS'
+  s.description = <<-DESC
+                    ViewControllerPresentationSpy has three verifiers:
+                    * AlertVerifier to capture alerts and action sheets
+                    * PresentationVerifier to capture presented view controllers
+                    * DismissalVerifier to capture dismissed view controllers
+
+                    Segues can be captured. For alerts, no actual alerts are presented. This means:
+
+                    * The workflow doesn't pause for an action to be selected.
+                    * Tests are blazing fast.
+                    * You can test things with unit tests instead of UI tests.
+                  DESC
+  s.homepage = 'https://github.com/jonreid/ViewControllerPresentationSpy'
+  s.license  = 'MIT'
+  s.author   = { 'Jon Reid' => 'jon@qualitycoding.org' }
+  s.social_media_url = 'https://twitter.com/qcoding'
+    
+  s.ios.deployment_target = '13.0'
+  s.tvos.deployment_target = '13.0'
+  s.source   = { :git => 'https://github.com/jonreid/ViewControllerPresentationSpy.git', :tag => 'v7.0.0' }
+  s.source_files = 'Source/ViewControllerPresentationSpy/*.{h,m,swift}'
+  s.requires_arc = true
+  s.swift_version = "5.7"
+  s.weak_framework = "XCTest"
+  s.pod_target_xcconfig = {
+    'ENABLE_TESTING_SEARCH_PATHS' => 'YES'
+  }
+  s.user_target_xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"',
+  }
+end

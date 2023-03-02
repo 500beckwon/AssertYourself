@@ -90,3 +90,4 @@
 - 리팩토링(Refactoring)?
     - 프로그램(시스템)의 동작을 변경하지 않고 코드가 작동하는 방식을 변경하는 것
 
+## Refactoring: Moving to MVVM 18장
