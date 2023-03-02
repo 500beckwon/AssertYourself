@@ -1,5 +1,5 @@
 //
-//  MVVMTests.swift
+//  ChangePasswordViewControllerTests.swift
 //  MVVMTests
 //
 //  Created by ByungHoon Ann on 2023/03/02.
