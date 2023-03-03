@@ -19,8 +19,6 @@
 		6827B53B29B0BF070083CC73 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6827B53A29B0BF070083CC73 /* ChangePasswordViewController.swift */; };
 		6827B53D29B0BF210083CC73 /* PasswordChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6827B53C29B0BF210083CC73 /* PasswordChanger.swift */; };
 		6827B53F29B0BF2D0083CC73 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6827B53E29B0BF2D0083CC73 /* main.swift */; };
-		6827B54329B0C2950083CC73 /* FBSnapshotTestCase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6827B54129B0C2950083CC73 /* FBSnapshotTestCase.xcframework */; };
-		6827B54529B0C2950083CC73 /* ViewControllerPresentationSpy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6827B54229B0C2950083CC73 /* ViewControllerPresentationSpy.xcframework */; };
 		6827B54A29B0C2A00083CC73 /* FBSnapshotTestCase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6827B54829B0C2A00083CC73 /* FBSnapshotTestCase.xcframework */; };
 		6827B54B29B0C2A00083CC73 /* ViewControllerPresentationSpy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6827B54929B0C2A00083CC73 /* ViewControllerPresentationSpy.xcframework */; };
 		6827B54D29B0C2AD0083CC73 /* FBSnapshotTestCase.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6827B54129B0C2950083CC73 /* FBSnapshotTestCase.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -92,8 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6827B54329B0C2950083CC73 /* FBSnapshotTestCase.xcframework in Frameworks */,
-				6827B54529B0C2950083CC73 /* ViewControllerPresentationSpy.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

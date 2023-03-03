@@ -91,3 +91,10 @@
     - 프로그램(시스템)의 동작을 변경하지 않고 코드가 작동하는 방식을 변경하는 것
 
 ## Refactoring: Moving to MVVM 18장
+- 어렵당...
+
+## Chapter 19. Refactoring: Moving to MVP 
+- 어렵당...
+- 추후 다시 볼것!
+
+## 
