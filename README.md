@@ -93,8 +93,8 @@
 ## Refactoring: Moving to MVVM 18장
 - 어렵당...
 
-## Chapter 19. Refactoring: Moving to MVP 
+## Refactoring: Moving to MVP 19장
 - 어렵당...
 - 추후 다시 볼것!
 
-## 
+## Test-Driven Development Beckons to You 20장
