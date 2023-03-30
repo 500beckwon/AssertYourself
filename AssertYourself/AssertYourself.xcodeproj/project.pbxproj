@@ -19,6 +19,7 @@
 		68E8E33F298A924600679048 /* AssertYourselfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E8E33E298A924600679048 /* AssertYourselfTests.swift */; };
 		68E8E349298A924600679048 /* AssertYourselfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E8E348298A924600679048 /* AssertYourselfUITests.swift */; };
 		68E8E34B298A924600679048 /* AssertYourselfUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E8E34A298A924600679048 /* AssertYourselfUITestsLaunchTests.swift */; };
+		68FFB19929D5AD4100E707AB /* ActiviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FFB19829D5AD4100E707AB /* ActiviteTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		68E8E344298A924600679048 /* AssertYourselfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssertYourselfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68E8E348298A924600679048 /* AssertYourselfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertYourselfUITests.swift; sourceTree = "<group>"; };
 		68E8E34A298A924600679048 /* AssertYourselfUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertYourselfUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68FFB19829D5AD4100E707AB /* ActiviteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiviteTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				683371C5298BD279006CBD3D /* ReviewAssertYourself.swift */,
 				683371C1298BCB13006CBD3D /* SimpleStruct.swift */,
 				683371C3298BCB8D006CBD3D /* StructWithDesDescription.swift */,
+				68FFB19829D5AD4100E707AB /* ActiviteTests.swift */,
 			);
 			path = AssertYourselfTests;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FFB19929D5AD4100E707AB /* ActiviteTests.swift in Sources */,
 				683371C2298BCB13006CBD3D /* SimpleStruct.swift in Sources */,
 				683371C4298BCB8D006CBD3D /* StructWithDesDescription.swift in Sources */,
 				683371C6298BD279006CBD3D /* ReviewAssertYourself.swift in Sources */,

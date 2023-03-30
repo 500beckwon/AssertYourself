@@ -89,13 +89,16 @@ final class ReviewAssertYourself: XCTestCase {
         XCTAssertEqual(result, 0.01)
     }
     
-    /// Fudge Equality with Doubles and Floats
     func test_floatingPointDanger() {
+        let result = 0.1 + 0.2
+        XCTAssertEqual(result, 0.3)
+    }
+    
+    /// Fudge Equality with Doubles and Floats
+    func test_floatingPointDanger2() {
         let result = 0.00000004 + 0.000000042
         // accuracy 정확도
         XCTAssertEqual(result, 0.000000082, accuracy: 0.000000001)
-        // test_floatingPointDanger(): XCTAssertEqual failed: ("0.30000000000000004") is not equal to ("0.3")
-        // XCTAssertEqual(result, 0.3)
     }
     
     /// Avoid Redundant Messages
