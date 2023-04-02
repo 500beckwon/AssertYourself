@@ -42,4 +42,17 @@ final class ActiviteTests: XCTestCase {
         let count: Int? = nil
         XCTAssertEqual(nil, count)
     }
+    
+    func test_SimpleStruct의_plus_함수의_리턴값이_다르다() {
+        let result = 5
+        let simpleStruct = SimpleStruct(x: 5, y: 1)
+        let simplePlusResult = simpleStruct.plus()
+        XCTAssertNotEqual(result, simplePlusResult)
+    }
+}
+
+final class ActivityFailTests: XCTestCase {
+    func test_fail에_대한_값을_반환한다() {
+        XCTFail("실패 반환 테스트")
+    }
 }

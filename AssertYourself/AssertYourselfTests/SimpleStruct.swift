@@ -10,4 +10,8 @@ import Foundation
 struct SimpleStruct {
     let x: Int
     let y: Int
+    
+    func plus() -> Int {
+        return x + y
+    }
 }
