@@ -15,6 +15,8 @@
 		6871FE51298D20DE00769C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6871FE4F298D20DE00769C0B /* LaunchScreen.storyboard */; };
 		6871FE75298D20EA00769C0B /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6871FE74298D20EA00769C0B /* MyClass.swift */; };
 		6871FE78298D219800769C0B /* MyClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6871FE77298D219800769C0B /* MyClassTests.swift */; };
+		68E9E3CA29E0448700449C33 /* MyActivites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E9E3C929E0448700449C33 /* MyActivites.swift */; };
+		68E9E3CC29E044D800449C33 /* MyActvitesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E9E3CB29E044D800449C33 /* MyActvitesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		6871FE57298D20DE00769C0B /* LifeCycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeCycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6871FE74298D20EA00769C0B /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		6871FE77298D219800769C0B /* MyClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassTests.swift; sourceTree = "<group>"; };
+		68E9E3C929E0448700449C33 /* MyActivites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActivites.swift; sourceTree = "<group>"; };
+		68E9E3CB29E044D800449C33 /* MyActvitesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActvitesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 				6871FE46298D20DD00769C0B /* SceneDelegate.swift */,
 				6871FE48298D20DD00769C0B /* ViewController.swift */,
 				6871FE74298D20EA00769C0B /* MyClass.swift */,
+				68E9E3C929E0448700449C33 /* MyActivites.swift */,
 				6871FE4A298D20DD00769C0B /* Main.storyboard */,
 				6871FE4D298D20DE00769C0B /* Assets.xcassets */,
 				6871FE4F298D20DE00769C0B /* LaunchScreen.storyboard */,
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				6871FE77298D219800769C0B /* MyClassTests.swift */,
+				68E9E3CB29E044D800449C33 /* MyActvitesTests.swift */,
 			);
 			path = LifeCycleTests;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 				6871FE75298D20EA00769C0B /* MyClass.swift in Sources */,
 				6871FE49298D20DD00769C0B /* ViewController.swift in Sources */,
 				6871FE45298D20DD00769C0B /* AppDelegate.swift in Sources */,
+				68E9E3CA29E0448700449C33 /* MyActivites.swift in Sources */,
 				6871FE47298D20DD00769C0B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E9E3CC29E044D800449C33 /* MyActvitesTests.swift in Sources */,
 				6871FE78298D219800769C0B /* MyClassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

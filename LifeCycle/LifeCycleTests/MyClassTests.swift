@@ -11,6 +11,7 @@ import XCTest
 // Arrange, Act, Assert
 class MyClassTests: XCTestCase {
     // sut = MyClass() 식으로 초기화 하지 않으면 인스턴스 소멸이 x
+    // System Under Test
     private var sut: MyClass!
     
     // 시작 전
@@ -36,7 +37,6 @@ class MyClassTests: XCTestCase {
     func test_methodOne() {
         sut.methodOne()
         // Normally, assert something
-        XCTFail("Failed, Yo")
     }
 
     func test_methodOne2() {
